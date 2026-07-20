@@ -1,0 +1,57 @@
+name: Publish permanent DALAIL.apk alias
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publish-latest-apk-alias.yml
+  release:
+    types: [published, edited]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish-alias:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create DALAIL.apk alias on the latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${{ github.event_name }}" == "release" ]]; then
+            TAG="${{ github.event.release.tag_name }}"
+          else
+            TAG="$(gh release view --repo "$GITHUB_REPOSITORY" --json tagName --jq '.tagName')"
+          fi
+
+          SOURCE_APK="$(
+            gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json assets \
+              --jq '[.assets[].name | select(endswith(".apk")) | select(. != "DALAIL.apk")][0]'
+          )"
+
+          if [[ -z "$SOURCE_APK" || "$SOURCE_APK" == "null" ]]; then
+            echo "No versioned APK found on release $TAG" >&2
+            exit 1
+          fi
+
+          WORK_DIR="$(mktemp -d)"
+          trap 'rm -rf "$WORK_DIR"' EXIT
+
+          gh release download "$TAG" \
+            --repo "$GITHUB_REPOSITORY" \
+            --pattern "$SOURCE_APK" \
+            --dir "$WORK_DIR"
+
+          cp "$WORK_DIR/$SOURCE_APK" "$WORK_DIR/DALAIL.apk"
+
+          gh release upload "$TAG" "$WORK_DIR/DALAIL.apk" \
+            --repo "$GITHUB_REPOSITORY" \
+            --clobber
+
+          echo "Published DALAIL.apk from $SOURCE_APK on release $TAG"
+          sha256sum "$WORK_DIR/DALAIL.apk"
