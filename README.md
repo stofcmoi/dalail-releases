@@ -1,49 +1,67 @@
-# DALAIL — تحميل تطبيق Android
+<div align="center">
 
-هذا المستودع مخصّص حصراً لنشر النسخ الرسمية القابلة للتحميل من تطبيق **DALAIL** على نظام Android. لا يُنشر الكود المصدري للتطبيق في هذا المستودع.
+# دلائل — تحميل تطبيق Android
 
-## تحميل آخر إصدار
+### DALAIL — Téléchargement Android
 
-حمّل التطبيق دائماً من صفحة الإصدارات الرسمية:
+الصفحة الرسمية لتحميل آخر نسخة من تطبيق **دلائل** وتثبيتها على هاتف Android.
 
-**[فتح صفحة آخر إصدار](https://github.com/stofcmoi/dalail-releases/releases/latest)**
+Page officielle pour télécharger et installer la dernière version Android de **DALAIL**.
 
-بعد فتح الصفحة، اضغط على ملف الـAPK الموجود ضمن **Assets** لبدء التحميل.
+<br>
 
-## تثبيت ملف APK خارج Google Play
+## ⬇️ تحميل آخر إصدار / Télécharger la dernière version
 
-لأن التطبيق يُوزَّع حالياً خارج Google Play، قد يطلب Android إذناً خاصاً عند التثبيت لأول مرة:
+### [تنزيل DALAIL.apk — Télécharger DALAIL.apk](https://github.com/stofcmoi/dalail-releases/releases/latest/download/DALAIL.apk)
 
-1. افتح ملف الـAPK بعد اكتمال التحميل.
-2. عندما تظهر رسالة منع التثبيت، اضغط **الإعدادات**.
-3. فعّل خيار **السماح من هذا المصدر** أو **تثبيت تطبيقات غير معروفة** للمتصفح أو مدير الملفات الذي فتحت منه الملف.
-4. ارجع إلى ملف الـAPK ثم اضغط **تثبيت**.
-5. بعد اكتمال التثبيت، يُفضّل إلغاء إذن **السماح من هذا المصدر** من إعدادات الهاتف.
+يؤدي الزر أعلاه دائماً إلى أحدث نسخة منشورة من التطبيق.
 
-قد تختلف أسماء القوائم قليلاً حسب نوع الهاتف وإصدار Android. لا تمنح هذا الإذن إلا عند تثبيت ملف تم تنزيله من صفحة DALAIL الرسمية أعلاه.
+Le bouton ci-dessus pointe toujours vers la dernière version publiée de l’application.
+
+[عرض معلومات آخر إصدار / Consulter la dernière version](https://github.com/stofcmoi/dalail-releases/releases/latest)
+
+</div>
 
 ---
 
-# DALAIL — Téléchargement Android
+## طريقة التثبيت على Android
 
-Ce dépôt est réservé aux versions Android officielles et téléchargeables de l’application **DALAIL**. Le code source de l’application n’est pas publié dans ce dépôt.
+لأن تطبيق **دلائل** يُوزَّع حالياً خارج Google Play، قد يطلب Android إذناً خاصاً عند التثبيت لأول مرة.
 
-## Télécharger la dernière version
+1. اضغط على زر **تنزيل DALAIL.apk** في أعلى الصفحة.
+2. بعد اكتمال التحميل، افتح ملف `DALAIL.apk` من إشعار التحميل أو من مجلد **التنزيلات**.
+3. إذا منع Android التثبيت، اضغط **الإعدادات**.
+4. فعّل **السماح من هذا المصدر** أو **تثبيت تطبيقات غير معروفة** للمتصفح أو مدير الملفات الذي استعملته.
+5. ارجع إلى ملف `DALAIL.apk` ثم اضغط **تثبيت**.
+6. بعد اكتمال التثبيت، افتح تطبيق **دلائل**.
+7. يُستحسن بعد ذلك إلغاء إذن **السماح من هذا المصدر** من إعدادات الهاتف.
 
-Téléchargez toujours l’application depuis la page officielle des Releases :
+> قد تختلف أسماء القوائم قليلاً حسب نوع الهاتف وإصدار Android. امنح الإذن فقط للمتصفح أو مدير الملفات الذي استعملته لتحميل التطبيق من هذه الصفحة الرسمية.
 
-**[Ouvrir la dernière version](https://github.com/stofcmoi/dalail-releases/releases/latest)**
+---
 
-Dans la section **Assets**, appuyez sur le fichier APK pour lancer le téléchargement.
+## Installation sur Android
 
-## Autoriser l’installation d’un APK hors Google Play
+Comme **DALAIL** est actuellement distribué en dehors de Google Play, Android peut demander une autorisation lors de la première installation.
 
-Comme DALAIL est actuellement distribué en dehors de Google Play, Android peut demander une autorisation lors de la première installation :
+1. Appuyez sur **Télécharger DALAIL.apk** en haut de cette page.
+2. À la fin du téléchargement, ouvrez `DALAIL.apk` depuis la notification ou le dossier **Téléchargements**.
+3. Si Android bloque l’installation, appuyez sur **Paramètres**.
+4. Activez **Autoriser depuis cette source** ou **Installer des applications inconnues** pour le navigateur ou le gestionnaire de fichiers utilisé.
+5. Revenez au fichier `DALAIL.apk`, puis appuyez sur **Installer**.
+6. Une fois l’installation terminée, ouvrez l’application **DALAIL**.
+7. Il est recommandé de désactiver ensuite **Autoriser depuis cette source** dans les paramètres du téléphone.
 
-1. Ouvrez le fichier APK après le téléchargement.
-2. Si Android bloque l’installation, appuyez sur **Paramètres**.
-3. Activez **Autoriser depuis cette source** ou **Installer des applications inconnues** pour le navigateur ou le gestionnaire de fichiers utilisé.
-4. Revenez au fichier APK puis appuyez sur **Installer**.
-5. Après l’installation, il est recommandé de désactiver de nouveau **Autoriser depuis cette source** dans les paramètres du téléphone.
+> Les intitulés peuvent varier selon la marque du téléphone et la version d’Android. Accordez cette autorisation uniquement au navigateur ou au gestionnaire de fichiers utilisé pour télécharger DALAIL depuis cette page officielle.
 
-Les intitulés peuvent varier selon la marque du téléphone et la version d’Android. Accordez cette autorisation uniquement pour un APK téléchargé depuis la page officielle DALAIL ci-dessus.
+---
+
+## معلومات الأمان / Informations de sécurité
+
+- لا يبدأ التحميل تلقائياً عند فتح هذه الصفحة؛ يجب الضغط على زر التحميل.
+- ملف `DALAIL.apk` الموجود هنا هو النسخة الرسمية المنشورة للاختبار.
+- لا يحتوي هذا المستودع العام على الكود المصدري للتطبيق.
+
+- L’ouverture de cette page ne lance aucun téléchargement automatique ; il faut appuyer sur le bouton.
+- Le fichier `DALAIL.apk` proposé ici est la version officielle publiée pour les tests.
+- Ce dépôt public ne contient pas le code source de l’application.
